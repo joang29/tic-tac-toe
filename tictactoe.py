@@ -25,9 +25,7 @@ def player(board):
         for j in range(len(board[0])):
             if board[i][j] == 'X': x+=1
             elif board[i][j] == 'O': o+=1
-    if x>o: return O
-    else: return X 
-
+    return O if x>o else X
 
 def actions(board):
     """
